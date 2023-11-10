@@ -1,0 +1,36 @@
+/* Style the popup container */
+body {
+    width: 200px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the text area for note content */
+  textarea {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the Save and Clear buttons */
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #0077CC;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0055A0;
+  }
+  
+  /* Style the note list */
+  #note-list {
+    padding-top: 10px;
+    border-top: 1px solid #DDD;
+  }
+  
