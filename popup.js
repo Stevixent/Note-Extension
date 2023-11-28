@@ -50,7 +50,7 @@ function clearNotes() {
   chrome.storage.sync.set({ notes: [] }, function() {
     // After clearing, update the UI to remove all notes
     noteList.innerHTML = '';
-
+ 
     // Display a success message
     displayMessage('Notes cleared successfully.');
   });
