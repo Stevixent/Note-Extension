@@ -1,36 +1,52 @@
 /* Style the popup container */
 body {
-    width: 200px;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Style the text area for note content */
-  textarea {
-    width: 100%;
-    height: 80px;
-    margin-bottom: 10px;
-  }
-  
-  /* Style the Save and Clear buttons */
-  button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #0077CC;
-    color: #FFF;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0055A0;
-  }
-  
-  /* Style the note list */
-  #note-list {
-    padding-top: 10px;
-    border-top: 1px solid #DDD;
-  }
-  
+  width: 300px;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Style the header */
+h1 {
+  color: #0077CC;
+}
+
+/* Style the text area for note content */
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* Style the Save and Clear buttons */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #0077CC;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0055A0;
+}
+
+/* Style the note list */
+#note-list {
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+/* Style the success message */
+#message {
+  color: #008000;
+  margin-top: 10px;
+}

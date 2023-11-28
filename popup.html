@@ -2,15 +2,21 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-  <h1>Simple Notes</h1>
-  <textarea id="note-content" placeholder="Write your note here"></textarea>
-  <button id="save-button">Save Note</button>
-  <button id="bold-button">Bold</button>
-  <button id="clear-button">Clear Note</button>
-  <div id="note-list">
-    <!-- Display existing notes here -->
+  <div class="container">
+    <img src="images/icon128.png" alt="Extension Icon" class="mb-3">
+    <h1 class="mt-3 mb-4">Note X</h1>
+    <div class="form-group">
+      <textarea id="note-content" class="form-control" placeholder="Write your note here"></textarea>
+    </div>
+    <button id="save-button" class="btn btn-primary btn-block">Save Note</button>
+    <button id="clear-button" class="btn btn-secondary btn-block">Clear Note</button>
+    <div id="note-list" class="mt-3">
+      <!-- Display existing notes here -->
+    </div>
+    <div id="message" class="text-success mt-3"></div>
   </div>
   <script src="popup.js"></script>
 </body>

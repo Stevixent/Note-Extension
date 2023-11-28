@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Simple Notes",
+    "name": "Note X",
     "version": "1.0",
     "description": "A note-taking extension for research and online classes",
     "permissions": ["storage"],
