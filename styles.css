@@ -3,13 +3,13 @@ body {
   width: 300px;
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #f8f9fa;
 }
 
 /* Style the header */
 h1 {
   color: #0077CC;
+  text-align: center;
 }
 
 /* Style the text area for note content */
@@ -49,4 +49,5 @@ button:hover {
 #message {
   color: #008000;
   margin-top: 10px;
+  text-align: center;
 }
