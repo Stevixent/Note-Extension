@@ -1,0 +1,4 @@
+ A SIMPLE ON THE GO NOTE CHROME EXTENSION
+  Video Demo:
+  Description:
+The Simple Notes Chrome extension offers a convenient way to take and manage notes while browsing. Whether you're conducting research, attending online classes, or simply jotting down quick thoughts, Simple Notes provides a minimalist and user-friendly interface. Features include the ability to save and sync notes across devices, ensuring your important information is always at your fingertips. The extension's clean design and intuitive controls make note-taking a breeze, helping you stay organized in your digital workspace.
