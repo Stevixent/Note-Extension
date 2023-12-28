@@ -51,3 +51,26 @@ button:hover {
   margin-top: 10px;
   text-align: center;
 }
+
+/* Add dark mode styles */
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode-container {
+  border: 1px solid #444;
+}
+
+/* Add more dark mode styles as needed */
+
+/* Add button styles */
+.btn-info {
+  background-color: #17a2b8;
+  color: #fff;
+  border: none;
+}
+
+.btn-info:hover {
+  background-color: #117a8b;
+}

@@ -4,6 +4,7 @@ const saveButton = document.getElementById('save-button');
 const clearButton = document.getElementById('clear-button');
 const noteList = document.getElementById('note-list');
 const messageElement = document.getElementById('message');
+const characterCountElement = document.getElementById('character-count');
 
 // Function to save a note to sync storage
 function saveNoteSync(noteText) {
@@ -50,7 +51,7 @@ function clearNotes() {
   chrome.storage.sync.set({ notes: [] }, function() {
     // After clearing, update the UI to remove all notes
     noteList.innerHTML = '';
- 
+
     // Display a success message
     displayMessage('Notes cleared successfully.');
   });
@@ -66,7 +67,13 @@ function displayMessage(message) {
   }, 3000);
 }
 
-// Add an event listener to the Save button
+// Function to update character count
+function updateCharacterCount() {
+  const characterCount = noteTextarea.value.length;
+  characterCountElement.textContent = `${characterCount} characters`;
+}
+
+// Add event listeners
 saveButton.addEventListener('click', () => {
   const noteText = noteTextarea.value;
   if (noteText) {
@@ -74,10 +81,44 @@ saveButton.addEventListener('click', () => {
   }
 });
 
-// Add an event listener to the Clear button
 clearButton.addEventListener('click', () => {
   clearNotes();
 });
 
+noteTextarea.addEventListener('input', () => {
+  updateCharacterCount();
+});
+
 // Initialize the UI by loading and displaying previously saved notes
 retrieveNotesSync();
+
+// Add this variable to keep track of the current mode
+let isDarkMode = false;
+
+// ... (your existing code)
+
+// Function to toggle between light and dark modes
+function toggleMode() {
+  const body = document.body;
+  const container = document.querySelector('.container');
+
+  isDarkMode = !isDarkMode;
+
+  // Toggle dark mode classes
+  body.classList.toggle('dark-mode', isDarkMode);
+  container.classList.toggle('dark-mode-container', isDarkMode);
+
+  // Update button text
+  const modeSwitchButton = document.getElementById('mode-switch');
+  modeSwitchButton.textContent = isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+}
+
+// ... (your existing code)
+
+// Add an event listener to the mode switch button
+const modeSwitchButton = document.getElementById('mode-switch');
+modeSwitchButton.addEventListener('click', () => {
+  toggleMode();
+});
+
+// ... (your existing code)
