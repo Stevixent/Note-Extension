@@ -59,7 +59,7 @@ button:hover {
 }
 
 .dark-mode-container {
-  border: 1px solid #444;
+  border: none; /* Remove the border */
 }
 
 /* Add more dark mode styles as needed */
@@ -69,8 +69,12 @@ button:hover {
   background-color: #17a2b8;
   color: #fff;
   border: none;
+  padding: 8px; /* Adjust padding to reduce button size */
+  font-size: 12px; /* Adjust font size to reduce button size */
 }
 
 .btn-info:hover {
   background-color: #117a8b;
 }
+
+
