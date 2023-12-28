@@ -110,7 +110,15 @@ function toggleMode() {
 
   // Update button text
   const modeSwitchButton = document.getElementById('mode-switch');
-  modeSwitchButton.textContent = ''; // Remove text
+  modeSwitchButton.textContent = isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode';
 }
+
+// ... (your existing code)
+
+// Add an event listener to the mode switch button
+const modeSwitchButton = document.getElementById('mode-switch');
+modeSwitchButton.addEventListener('click', () => {
+  toggleMode();
+});
 
 // ... (your existing code)
